@@ -57,7 +57,7 @@
             </div>
 
             <div class="govuk-header__content">
-                <a href="register.html" class="govuk-header__link govuk-header__link--service-name">Project Management Tool</a>
+                <a href="login.html" class="govuk-header__link govuk-header__link--service-name">Project Management Tool</a>
 
                 <button role="button" class="govuk-header__menu-button js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
                 <nav>
@@ -70,6 +70,9 @@
                         </li>
                         <li class="govuk-header__navigation-item">
                             <a class="govuk-header__link" href="admin.html">Admin</a>
+                        </li>
+                        <li class="govuk-header__navigation-item">
+                            <a class="govuk-header__link" href="login.html">Sign out</a>
                         </li>
                     </ul>
                 </nav>
@@ -217,20 +220,51 @@
 
 <!-- Table-->
 
+<div class="govuk-width-container">
+    <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+   <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+     <h1 class="govuk-fieldset__heading">
+       What area is this project at risk?
+     </h1>
+   </legend>
+</div>
+
     <div class="govuk-width-container ">
     <div class="govuk-form-group">
     <label class="govuk-label" for="sort">
-      Risk property/dependency
+      Risk
     </label>
     <select class="govuk-select" id="sort" name="sort">
-      <option value="selected" selected>choose one</option>
-      <option value="funding">Third party</option>
-      <option value="data">Lorem ipsum</option>
-      <option value="career">Veni vidi vici</option>
-      <option value="apprentiship">Dum spiro spero</option>
+      <option value="res">Resources</option>
+      <option value="fin">Financial</option>
+      <option value="gov">Governence</option>
+      <option value="ope">Operational</option>
+      <option value="pla">Planning</option>
+      <option value="str">Strategic</option>
+      <option value="sec">Security</option>
+      <option value="rep">Reputational</option>
+      <option value="hea">Health & Safety</option>
+      <option value="pro">Procurement</option>
+      <option value="gov">Governence</option>
+      <option value="bus">Business readiness</option>
+      <option value="ben">Benefits realisation</option>
+      <option value="com">Communication</option>
+      <option value="inf">Infastructure</option>
+      <option value="pol">Political</option>
+      <option value="selected" selected>Other</option>
     </select>
    </div>
   </div>
+<br>
+
+<div class="govuk-width-container">
+<div class="govuk-form-group">
+  <label class="govuk-label" for="width-20">
+    Describe other Risk
+  </label>
+  <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
+</div>
+</div>
 <br>
 
 <div class="govuk-width-container">
