@@ -116,7 +116,7 @@
     <fieldset class="govuk-fieldset">
       <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
         <h1 class="govuk-heading-m">
-          This is a space for the PMO's to set this projects original scope, a north star. <br>
+          This is a space for the PMO's to set this projects original scope, project objectives. <br>
           Details on why and how this project was created, why it is important and how <br>this should be accomplished.
         </h1>
       </div>
@@ -217,23 +217,70 @@
 </div>
 </div>
 
-
-<!-- Table-->
-
 <div class="govuk-width-container">
     <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
      <h1 class="govuk-fieldset__heading">
-       What area is this project at risk?
+      What is your overall delivery confidence of the project?
+     </h1>
+   </legend>
+
+   <div class="govuk-width-container">
+      <br>
+      <table class="govuk-table">
+     <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__cell" scope="row">
+          <div class="govuk-radios govuk-radios--inline">
+           <div class="govuk-radios__item">
+           <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
+          <label class="govuk-label govuk-radios__label" for="changed-name-1">
+         Low
+        </label>
+      </div>
+      </th>
+
+        <th class="govuk-table__cell" scope="col">
+          <div class="govuk-radios govuk-radios--inline">
+           <div class="govuk-radios__item">
+           <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
+          <label class="govuk-label govuk-radios__label" for="changed-name-1">
+         Medium
+        </label>
+        </div>
+        </th>
+
+        <th class="govuk-table__cell" scope="col">
+          <div class="govuk-radios govuk-radios--inline">
+           <div class="govuk-radios__item">
+           <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
+          <label class="govuk-label govuk-radios__label" for="changed-name-1">
+         High
+        </label>
+        </div>
+        </th>
+
+
+    </tbody>
+
+ </table>
+</div>
+<!-- Table-->
+
+<div class="govuk-width-container">
+    <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+   <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+     <h1 class="govuk-fieldset__heading">
+      If you have given a Medium or Low confidence rating use the dropdown below to list the reasons
      </h1>
    </legend>
 </div>
 
     <div class="govuk-width-container ">
     <div class="govuk-form-group">
-    <label class="govuk-label" for="sort">
-      Risk
-    </label>
+      <span id="waste-hint" class="govuk-hint">
+      Select all that apply
+    </span>
     <select class="govuk-select" id="sort" name="sort">
       <option value="res">Resources</option>
       <option value="fin">Financial</option>
@@ -267,149 +314,30 @@
 </div>
 <br>
 
-<div class="govuk-width-container">
-    <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
-   <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-     <h1 class="govuk-fieldset__heading">
-       What is the level of the impact / likelihood of the above risk?
-     </h1>
-   </legend>
-
-   <div class="govuk-width-container">
-     <span id="waste-hint" class="govuk-hint">
-       Use the table below to show how the risk will affect this project
-     </span>
-    <caption class="govuk-table__caption">Radio box grid</caption>
-    <br>
-      <table class="govuk-table">
-     <tbody class="govuk-table__body">
-      <tr class="govuk-table__row">
-        <th class="govuk-table__cell" scope="row">
-          <div class="govuk-radios govuk-radios--inline">
-           <div class="govuk-radios__item">
-           <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
-          <label class="govuk-label govuk-radios__label" for="changed-name-1">
-         Low likelihood / High impact
-        </label>
-      </div>
-      </th>
-
-        <th class="govuk-table__cell" scope="col">
-          <div class="govuk-radios govuk-radios--inline">
-           <div class="govuk-radios__item">
-           <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
-          <label class="govuk-label govuk-radios__label" for="changed-name-1">
-         Medium likelihood / High impact
-        </label>
-        </div>
-        </th>
-
-        <th class="govuk-table__cell" scope="col">
-          <div class="govuk-radios govuk-radios--inline">
-           <div class="govuk-radios__item">
-           <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
-          <label class="govuk-label govuk-radios__label" for="changed-name-1">
-         High likelihood / High impact
-        </label>
-        </div>
-        </th>
-
-      </tr>
-    </tbody>
-    <tbody class="govuk-table__body">
-     <tr class="govuk-table__row">
-       <th class="govuk-table__cell" scope="row">
-         <div class="govuk-radios govuk-radios--inline">
-          <div class="govuk-radios__item">
-          <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
-         <label class="govuk-label govuk-radios__label" for="changed-name-1">
-        Low likelihood / Medium impact
-       </label>
-     </div>
-     </th>
-
-       <th class="govuk-table__cell" scope="col">
-         <div class="govuk-radios govuk-radios--inline">
-          <div class="govuk-radios__item">
-          <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
-         <label class="govuk-label govuk-radios__label" for="changed-name-1">
-        Medium likelihood / Medium impact
-       </label>
-       </div>
-       </th>
-
-       <th class="govuk-table__cell" scope="col">
-         <div class="govuk-radios govuk-radios--inline">
-          <div class="govuk-radios__item">
-          <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
-         <label class="govuk-label govuk-radios__label" for="changed-name-1">
-        High likelihood / Medium impact
-       </label>
-       </div>
-       </th>
-
-     </tr>
-     <tbody class="govuk-table__body">
-      <tr class="govuk-table__row">
-        <th class="govuk-table__cell" scope="row">
-          <div class="govuk-radios govuk-radios--inline">
-           <div class="govuk-radios__item">
-           <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
-          <label class="govuk-label govuk-radios__label" for="changed-name-1">
-         Low likelihood / Low impact
-        </label>
-      </div>
-      </th>
-
-        <th class="govuk-table__cell" scope="col">
-          <div class="govuk-radios govuk-radios--inline">
-           <div class="govuk-radios__item">
-           <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
-          <label class="govuk-label govuk-radios__label" for="changed-name-1">
-         Medium likelihood / Low impact
-        </label>
-        </div>
-        </th>
-
-        <th class="govuk-table__cell" scope="col">
-          <div class="govuk-radios govuk-radios--inline">
-           <div class="govuk-radios__item">
-           <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
-          <label class="govuk-label govuk-radios__label" for="changed-name-1">
-         High likelihood / Low impact
-        </label>
-        </div>
-        </th>
-
-      </tr>
-    </tbody>
-
- </table>
-</div>
-
 <!--checkboxes-->
+
 <br>
 <div class="govuk-form-group">
   <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
       <h1 class="govuk-fieldset__heading">
-        Has your SRO been contacted about this Risk issue?
+        Is your SRO aware of this?
       </h1>
     </legend>
     <span id="waste-hint" class="govuk-hint">
       Select one
     </span>
     <div class="govuk-checkboxes">
-      <div class="govuk-checkboxes__item">
+     <div class="govuk-checkboxes__item">
         <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
         <label class="govuk-label govuk-checkboxes__label" for="waste-1">
-          Yes, and he has acknowledged this
+        Yes, and they has acknowledged this
         </label>
       </div>
       <div class="govuk-checkboxes__item">
         <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
         <label class="govuk-label govuk-checkboxes__label" for="waste-1">
-          Yes, but not responded yet
+          Informed, but not responded yet
         </label>
       </div>
         <div class="govuk-checkboxes__item">
@@ -422,6 +350,7 @@
   </fieldset>
 </div>
 <br>
+
 
 <!--Button-->
 
